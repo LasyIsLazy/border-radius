@@ -21,7 +21,7 @@ window.onload = function () {
   const recWidthInp = document.getElementById('recWidth')
   const recHeightInp = document.getElementById('recHeight')
   const codePre = document.getElementById('code')
-  const eles = [tl1, tl2, tr1, tr2, br1, br1, bl1, bl2]
+  const eles = [tl1, tl2, tr1, tr2, br1, br2, bl1, bl2]
   const radius = eles.map(function (ele) { return 0 })
   eles.forEach(function (ele, idx) {
     ele.addEventListener('input', function (e) {
