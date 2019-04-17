@@ -5,7 +5,7 @@ window.onload = function () {
     const yRadius = radius.filter(function (e, idx) { return idx % 2 })
     const radiusStr = xRadius.map(function (e) { return e + unit }).join(' ') + ' / ' + yRadius.map(function (e) { return e + unit }).join(' ')
     ele.style.borderRadius = radiusStr
-    codePre.innerText = 'border-radius: ' + ele.style.borderRadius + ';'
+    codePre.innerText = 'border-radius: ' + radiusStr + ';'
   }
   let unit = '%'
   const rect = document.getElementById('rect')
