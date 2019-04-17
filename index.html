@@ -43,28 +43,40 @@
         transform: translateX(-50%);
         text-align: center;
       }
+      .code-container {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div class="rect" id="rect"></div>
+    <div class="code-container">
+      Final code
+      <pre id="code">border-radius: 0;</pre>
+    </div>
     <div class="tl">
-      <label>Top left x</label><input type="number" name="tl1" id="tl1" /><br />
-      <label>Top left y</label><input type="number" name="tl2" id="tl2" />
+      <label>Top left x</label>
+      <input type="number" name="tl1" id="tl1" placeholder="0" /><br />
+      <label>Top left y</label>
+      <input type="number" name="tl2" id="tl2" placeholder="0" />
     </div>
     <div class="tr">
-      <label>Top right x</label
-      ><input type="number" name="tr1" id="tr1" /><br />
-      <label>Top right x</label><input type="number" name="tr2" id="tr2" />
+      <label>Top right x</label>
+      <input type="number" name="tr1" id="tr1" placeholder="0" /><br />
+      <label>Top right x</label>
+      <input type="number" name="tr2" id="tr2" placeholder="0" />
     </div>
     <div class="br">
-      <label>Bottom right x</label
-      ><input type="number" name="br1" id="br1" /><br />
-      <label>Bottom right x</label><input type="number" name="br2" id="br2" />
+      <label>Bottom right x</label>
+      <input type="number" name="br1" id="br1" placeholder="0" /><br />
+      <label>Bottom right x</label>
+      <input type="number" name="br2" id="br2" placeholder="0" />
     </div>
     <div class="bl">
-      <label>Bottom left x</label
-      ><input type="number" name="bl1" id="bl1" /><br />
-      <label>Bottom left x</label><input type="number" name="bl2" id="bl2" />
+      <label>Bottom left x</label>
+      <input type="number" name="bl1" id="bl1" placeholder="0" /><br />
+      <label>Bottom left x</label>
+      <input type="number" name="bl2" id="bl2" placeholder="0" />
     </div>
     <div class="setting">
       <label>Radius unit: </label>
