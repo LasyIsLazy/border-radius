@@ -8,25 +8,79 @@
     <style>
       body {
         background-color: #000;
+        color: #fff;
       }
       .rect {
         width: 200px;
         height: 200px;
         border: 10px solid #22b6ed;
-        margin: 300px auto;
+        margin: 300px auto 0 auto;
+      }
+      .tl {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+      .tr {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+      }
+      .br {
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+      }
+      .bl {
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+      }
+      .setting {
+        position: absolute;
+        bottom: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="rect" id="rect"></div>
-    <input type="text" name="tl1" id="tl1" />
-    <input type="text" name="tl2" id="tl2" />
-    <input type="text" name="tr1" id="tr1" />
-    <input type="text" name="tr2" id="tr2" />
-    <input type="text" name="br1" id="br1" />
-    <input type="text" name="br2" id="br2" />
-    <input type="text" name="bl1" id="bl1" />
-    <input type="text" name="bl2" id="bl2" />
+    <div class="tl">
+      <label>Top left x</label><input type="number" name="tl1" id="tl1" /><br />
+      <label>Top left y</label><input type="number" name="tl2" id="tl2" />
+    </div>
+    <div class="tr">
+      <label>Top right x</label
+      ><input type="number" name="tr1" id="tr1" /><br />
+      <label>Top right x</label><input type="number" name="tr2" id="tr2" />
+    </div>
+    <div class="br">
+      <label>Bottom right x</label
+      ><input type="number" name="br1" id="br1" /><br />
+      <label>Bottom right x</label><input type="number" name="br2" id="br2" />
+    </div>
+    <div class="bl">
+      <label>Bottom left x</label
+      ><input type="number" name="bl1" id="bl1" /><br />
+      <label>Bottom left x</label><input type="number" name="bl2" id="bl2" />
+    </div>
+    <div class="setting">
+      <label>Radius unit: </label>
+      <select id="unit">
+        <option>%</option>
+        <option>px</option>
+      </select>
+      <br />
+      <label>Rect width: </label>
+      <input type="number" name="width" id="recWidth" placeholder="200" />
+      <span>px</span>
+      <br />
+      <label>Rect height: </label>
+      <input type="number" name="height" id="recHeight" placeholder="200" />
+      <span>px</span>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
